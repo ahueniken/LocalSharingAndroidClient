@@ -3,6 +3,7 @@
     package="com.adamhueniken.localsharing" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -19,6 +20,9 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".CurrentAppService"
+            android:exported="false"/>
     </application>
 
 </manifest>
